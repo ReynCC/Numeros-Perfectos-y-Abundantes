@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+<script src="Funciones/FuncionPyA.js"></script>
+    </head>
+
+    <body>
+
+        <script>
+
+        let num, i , seleccion;
+        seleccion = parseInt(prompt("Ingrese 1. Para numeros abundantes 2. Para numeros perfecto"));
+        if(seleccion == 1){
+
+          num = parseInt(prompt("Igrese numero : ")) ;  
+
+          for(i = 0; i <= num; i++) {
+
+                if(abundante(i)) {
+
+                    document.write("El numero " + i + " es un numero abundante" + "<br>") ;
+
+                }
+            }
+        }
+        if(seleccion == 2){
+
+        num = parseInt(prompt("Igrese numero : ")) ;  
+
+          for(i = 0; i <= num; i++) {
+
+                if(perfecto(i)) {
+
+          document.write("El numero " + i + " es un numero perfecto" + "<br>") ;
+
+      }
+  }
+}
+      if(seleccion < 1){
+          alert("ES UN NUMERO MENOR A 1")
+      }      
+      if(seleccion > 2){
+          alert("ES UN NUMERO MAYOR A 2")
+      }   
+          
+        </script>
+
+    </body>
+
+</html>
